@@ -1,28 +1,21 @@
-var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+let datumsLidz = new Date("May 20, 2025 00:00:00").getTime();
 
-// Update the count down every 1 second
+
 let x = setInterval(function() {
+let tagad = new Date().getTime();
+let laiksPalicis = datumsLidz - tagad
 
-  // Get today's date and time
-  var now = new Date().getTime();
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+document.getElementById("izvade").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+if (laiksPalicis < 0) {  
+ clearInterval(x);
+  document.getElementById("izvade").innerHTML = "Laiks beidzies";
   }
 }, 1000);
 
