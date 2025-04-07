@@ -1,1 +1,18 @@
-
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: azure;
+}
+.set{
+    text-align: center;
+}
+.w{
+   background-image: url("https://theawesomedaily.com/wp-content/uploads/2017/12/national-geographic-Best-Images-of-2017-2-1.jpg");
+   background-size: cover;
+    width: 800px;
+    height: 500px;
+}
