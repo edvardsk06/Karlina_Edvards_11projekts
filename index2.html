@@ -1,44 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="lv">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-     content="width=device-width,
-      initial-scale=1.0" />
-    <title>Lapa 2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Treniņš</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="body2">
 
-<body>
-    <p><a href="index.html">
-         Atpakaļ uz pirmo lapu</a></p>
-</body>
-
-</html>
+    <div class="header1">
+        <h2>Mācies un kļūsti par izcilnieku!</h2>
+        </div>
 
 
+    <div class="virs">
+    <h1>Sāc tagad, negaidi rītdienu!</h1>
+    </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-    <h1>Ieslēdz/Izslēdz Spuldzes </h1><br>
-    <h2>Uzklikšķinot attēlam ar spuldzi, "ieslēdz" to, bet uzklikšķinot vēlreiz - izslēdz!</h2>
+    <main>
 
-    <h1 id="title">💡Spuldzes</h1>
-    <div class="set">
+
+    <details>
+        <summary class="kopsavilkums"> </summary>
+      <p>Atbildi uz jautājumiem un papildini savas zināšanas, lai labāk sagatavotos eksāmenam.<br>
+      Jautājumus lasi rūpīgi un atbildes raksti pareizajā formā, savādāk tās netiks ieskaitītas.<br>
+    Uz visiem jautājumiem jāatbild atbilžu lodziņā ierakstot viena vārda atbildi, ja nepieciešams <br>
+    ieraksti skaitli, tas būs norādīts atsevišķajā jautājumā. Gadījumā, ja vēlies apskatīt <br>
+     visus jautājumus un pareizās atbildes, vienā vietā noklikšķini uz zemāk redzamā attēla <br>
+      un viss tiks atklāts.</p>
+    </details>
+
+
+    <div id="jautajums" class="jauta"></div>
+    <label>Ievadi savu atbildi:<br></label>
+    <input type="text" id="atbildetais" />
+
+<button onclick="poga()">Iesniegt</button>
+<div id="izvade"></div>
+</div>
+
+
+    <div class="poga">
       <button class="w"></button>
-      <button class="a"></button>
     </div>
 
 
-
-    <script src="java2.js"></script>
+<a href="index.html" class="atpakal">Atpakaļ uz pirmo lapu</a>
+  </main>
+  <script src="masivs.js"></script>
+  <script src="java.js"></script>
 </body>
 </html>
 
